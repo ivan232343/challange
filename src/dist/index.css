@@ -1,3 +1,22 @@
 * {
   margin: 0;
+  box-sizing: content-box;
+}
+
+body {
+  padding: 2rem;
+  height: 90vh;
+  background-color: #d5b5e7;
+}
+
+textarea#de_cri {
+  appearance: textfield;
+  resize: none;
+}
+
+textarea {
+  margin: 1rem;
+  padding: 1rem;
+  border: none;
+  background: none;
 }
