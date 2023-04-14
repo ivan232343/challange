@@ -11,6 +11,7 @@ svg #Vector {
 }
 
 textarea {
+  resize: none;
   margin: 1rem;
   padding: 1rem;
   border: none;
@@ -18,12 +19,15 @@ textarea {
   font-size: x-large;
   color: white;
   max-height: 30rem;
-}
-textarea#de_cri {
-  appearance: textfield;
-  resize: none;
   height: -webkit-fill-available;
   width: -webkit-fill-available;
+}
+textarea#out {
+  height: 55vh;
+  width: 100%;
+  max-width: 250px;
+  margin: auto;
+  padding: 0;
 }
 textarea:focus-visible {
   outline: none;
@@ -59,7 +63,7 @@ button.btn-crypt:hover {
 
 .main {
   display: grid;
-  grid-template-columns: 1fr 30%;
+  grid-template-columns: 1fr 25%;
   grid-template-rows: auto 1fr;
   align-items: stretch;
   grid-gap: 1rem;
@@ -92,14 +96,26 @@ button.btn-crypt:hover {
   box-shadow: 0px 0px 20px 8px #734d9396;
 }
 .main__aside .__result ._active {
-  display: initial;
+  display: block;
 }
 .main__aside .__result ._hidden {
   display: none;
 }
-.main__aside .__result--box-decrypy-main__formulario {
+.main__aside .__result--box-decrypy {
+  height: 100%;
+}
+.main__aside .__result--box-decrypy-resul_form {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: space-around;
+}
+.main__aside .__result--box-decrypy-resul_form--btn {
+  width: 50%;
+}
+.main__aside .__result--box-decrypy-resul_form--btn button {
+  width: 100%;
 }
 .main__aside .__result--no_msg {
   display: flex;
@@ -118,12 +134,12 @@ button.btn-crypt:hover {
 .main__aside .__result--no_msg-box--img {
   padding: 0.25rem;
   width: 75%;
-  max-width: 300px;
+  max-width: 250px;
   margin: 0 auto;
 }
 .main__aside .__result--no_msg-box--text {
   text-align: center;
-  width: 85%;
+  width: 90%;
   color: white;
   padding: 0.5rem 0 0 0px;
   margin: 0 auto;
