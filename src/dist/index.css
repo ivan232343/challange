@@ -143,4 +143,38 @@ button.btn-crypt:hover {
   color: white;
   padding: 0.5rem 0 0 0px;
   margin: 0 auto;
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 730px) {
+  .main {
+    grid-template-columns: 1fr 35%;
+    height: 87vh;
+  }
+  .main__formulario {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 530px) {
+  body {
+    padding: 4vh 3vw;
+  }
+
+  .main {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    height: 95vh;
+  }
+  .main__formulario {
+    margin-left: 0;
+  }
+  .main__aside {
+    grid-row: 3;
+  }
+  .main__aside .__result--no_msg-box--img {
+    display: none;
+  }
+  .main__aside .__result--no_msg-box--text {
+    padding: 0.5rem 0;
+  }
 }
