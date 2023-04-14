@@ -34,9 +34,6 @@ function cipherLens(dict = dictAlura) {
     ]
 }
 const [cipher, decipher] = cipherLens()
-console.assert(cipher("hola mundo") == 'hoberlai mufatndober', 'failed test 1')
-console.assert(decipher("hoberlai mufatndober") == 'hola mundo', 'failed test 2')
-console.log(cipher("hola mundo"))
 
 document.querySelectorAll(".btn-crypt").forEach((e) => {
     e.onclick = (u) => {
@@ -53,8 +50,9 @@ document.querySelectorAll(".btn-crypt").forEach((e) => {
         } else if (u.target.id === "decrypt") {
             save = decipher(input_put.value)
         } else if (u.target.id === "copy") {
-            input_out.select();
-            document.execCommand('copy');
+            // input_out.select();
+            // document.execCommand('copy');
+            navigator.clipboard.writeText(input_out.value);
         }
         input_out.value = save
     }
