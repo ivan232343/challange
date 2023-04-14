@@ -80,7 +80,19 @@ button.btn-crypt:hover {
   flex-wrap: wrap;
 }
 .main__formulario--input {
-  height: 50vh;
+  height: 42vh;
+}
+.main__formulario--atention {
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  width: 44%;
+  flex-direction: row;
+  align-items: center;
+}
+.main__formulario--atention-text {
+  margin-left: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 .main__formulario--box {
   display: flex;
