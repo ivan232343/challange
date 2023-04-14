@@ -177,4 +177,14 @@ button.btn-crypt:hover {
   .main__aside .__result--no_msg-box--text {
     padding: 0.5rem 0;
   }
+  .main__aside .__result--box-decrypy-resul_form--input {
+    width: 90%;
+    padding: 1rem;
+  }
+  .main__aside .__result--box-decrypy-resul_form--input textarea {
+    height: 35vh;
+  }
+  .main__aside .__result--box-decrypy-resul_form--btn {
+    padding: 1rem;
+  }
 }
