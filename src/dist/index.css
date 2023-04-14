@@ -86,7 +86,6 @@ button.btn-crypt:hover {
   color: white;
   display: flex;
   justify-content: flex-start;
-  width: 44%;
   flex-direction: row;
   align-items: center;
 }
